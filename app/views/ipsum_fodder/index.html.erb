@@ -1,0 +1,13 @@
+<section class="row ipsum-content">
+  <section class="ipsum-select-words-block">
+    <%= render partial: "word_block", locals: {base_words: @base_words} %>
+  </section>
+  <div class="column column-6 ipsum-category-block">
+    <section class="row">
+      <%= render partial: "ignore_block" %>
+    </section>
+    <section class="row">
+      <%= render partial: "category_block", locals: {categories: @categories} %>
+    </section>
+  </div>
+</section>

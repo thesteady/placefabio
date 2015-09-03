@@ -1,0 +1,9 @@
+<% categories.in_groups(2, false) do |group| %>
+  <div class="column column-6">
+    <% group.each do |category| %>
+      <div class="ipsum-block" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <%= category.name %>
+      </div>
+    <% end %>
+  </div>
+<% end %>

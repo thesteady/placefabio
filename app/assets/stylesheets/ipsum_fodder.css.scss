@@ -1,0 +1,24 @@
+.ipsum-block {
+  width: 100%;
+  height: 100px;
+  background-color: pink;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+
+.fodder-word-block {
+  width: 100px;
+  height: 20px;
+}
+
+.word-split-list {
+  list-style: none;
+}
+
+.word-split-list li {
+  border: 1px solid;
+  border-radius: 25px;
+  margin: 10px;
+  padding: 3px;
+  text-align: center;
+}
