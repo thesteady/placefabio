@@ -7,8 +7,6 @@ class IpsumFodder
     proper_nouns = self.class.snag_proper_nouns(text)
     stripped_words = self.class.strip_words(all_words, proper_nouns)
     normalized_uniq_words = self.class.normalize_uniq_words(stripped_words)
-    # TODO: narrow this ipsum down even more
-    # Maybe remove common words, etc
     @ipsum = normalized_uniq_words
   end
 

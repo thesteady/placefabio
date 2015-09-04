@@ -1,9 +1,16 @@
-<% categories.in_groups(2, false) do |group| %>
-  <div class="column column-6">
+<% categories.in_groups(3, false) do |group| %>
+  <section class="row">
     <% group.each do |category| %>
-      <div class="ipsum-block" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <%= category.name %>
+      <div class="column column-6">
+        <div class="ipsum-block row" ondrop="dropNewWord(event)" id=<%= "category-#{category}" %> ondragover="allowDrop(event)">
+          <div class="category-drop-block column column-6">
+            <h1> <%= category.capitalize %> </h1>
+          </div>
+          <div class="column column-6">
+            <ul></ul>
+          </div>
+        </div>
       </div>
     <% end %>
-  </div>
+  </section>
 <% end %>

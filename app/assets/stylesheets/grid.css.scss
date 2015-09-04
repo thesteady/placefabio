@@ -1,5 +1,6 @@
-.row,
-.column {
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -16,6 +17,7 @@
 .column {
   position: relative;
   float: left;
+  display: block;
 }
 
 .column + .column {
