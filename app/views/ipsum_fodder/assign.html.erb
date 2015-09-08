@@ -1,6 +1,10 @@
 <section class="row ipsum-content">
   <section class="ipsum-select-words-block column column-6">
-    <%= render partial: "word_block", locals: {base_words: @base_words} %>
+    <% if @base_words.any? %>
+      <%= render partial: "word_block", locals: {base_words: @base_words} %>
+    <% else %>
+      <%= render partial: "upload_more" %>
+    <% end %>
   </section>
   <div class="column column-6 ipsum-category-block">
     <section class="row">
