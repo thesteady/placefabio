@@ -1,7 +1,7 @@
 <section class="row ipsum-new-content">
   <section class="column column-12">
     <%= form_tag "/ipsum-fodder", class: 'new-ipsum-form' do %>
-      <%= text_area_tag 'input-text', nil %>
+      <%= text_area_tag 'input_text', nil, required: true %>
       <%= submit_tag "Generate Romance" %>
     <% end %>
   </section>

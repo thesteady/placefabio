@@ -18,6 +18,7 @@ Bundler.require(*Rails.groups)
 module Placefabio
   class Application < Rails::Application
     config.active_record.raise_in_transactional_callbacks = true
+    config.autoload_paths += Dir["#{config.root}/app/services/**/services"]
 
     config.generators do |g|
       g.factory_girl false

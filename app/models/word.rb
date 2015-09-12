@@ -18,6 +18,6 @@ class Word < ActiveRecord::Base
   private
 
   def downcase_name
-    self.name = self.name.downcase if attribute_present?("self")
+    self.name = self.name.downcase if attribute_present?("name")
   end
 end
