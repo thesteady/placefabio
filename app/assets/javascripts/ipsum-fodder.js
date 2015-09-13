@@ -26,7 +26,6 @@ var IpsumFodder = {
   },
   dropNewWord: function(ev) {
     ev.preventDefault();
-    //TODO: Show 'upload more' when no more words present
     var evWordId = ev.dataTransfer.getData("text");
     var evCategoryId = event.currentTarget.id;
     var wordList = $(event.currentTarget).find('ul')[0];
@@ -37,13 +36,12 @@ var IpsumFodder = {
     var wordParams = IpsumFodder.handleIgnoreParam(categoryType, baseWordParams);
 
     IpsumFodder.postNewWord(wordParams, wordList, evWordId);
+  },
+  dragWord: function(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
   }
 };
 
 function allowDrop(ev) {
   ev.preventDefault();
-}
-
-function drag(ev) {
-  ev.dataTransfer.setData("text", ev.target.id);
 }

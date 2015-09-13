@@ -2,7 +2,7 @@
   <div class="column column-4">
     <ul class="word-split-list">
       <% group.each do |word| %>
-        <li class="fodder-word-block" id=<%= "word-#{word}" %> draggable="true" ondragstart="drag(event)"><%= word %></li>
+        <li class="fodder-word-block" id=<%= "word-#{word}" %> draggable="true" ondragstart="IpsumFodder.dragWord(event)"><%= word %></li>
       <% end %>
     </ul>
   </div>
