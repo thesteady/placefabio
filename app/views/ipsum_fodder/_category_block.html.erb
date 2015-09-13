@@ -2,7 +2,7 @@
   <section class="row">
     <% group.each do |category| %>
       <div class="column column-6">
-        <div class="ipsum-block row" ondrop="dropNewWord(event)" id=<%= "category-#{category}" %> ondragover="allowDrop(event)">
+        <div class="ipsum-block row" ondrop="IpsumFodder.dropNewWord(event)" id=<%= "category-#{category}" %> ondragover="allowDrop(event)">
           <div class="category-drop-block column column-6">
             <h1> <%= category.capitalize %> </h1>
           </div>
