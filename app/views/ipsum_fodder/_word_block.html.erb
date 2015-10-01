@@ -1,0 +1,10 @@
+<% base_words.in_groups(3, false) do |group| %>
+  <div class="column column-4">
+    <ul class="word-split-list">
+      <% group.each do |word| %>
+        <li class="fodder-word-block" id=<%= "word-#{word}" %> draggable="true" ondragstart="IpsumFodder.dragWord(event)"><%= word %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+

@@ -24,7 +24,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   gem 'rspec-rails'
   gem 'byebug'
+  gem 'factory_girl_rails'
   gem 'web-console', '~> 2.0'
   gem 'spring'
+  gem 'teaspoon-jasmine'
+end
+
+group :test do
+  gem 'shoulda-matchers'
 end
 
